@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atharva Sarde | Tech Portfolio</title>
+  <link rel="icon" type="image/png" href="images/AS_logo_portfolio.png" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap">
+  <style>
+    body {
+      font-family: 'Fira Code', monospace;
+      color: white;
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+    #about-popup {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#about-popup.show {
+  opacity: 1;
+  transform: scale(1);
+}
+  </style>
+</head>
+<body>
+  <!-- Background Video -->
+  <video autoplay muted loop class="video-bg">
+    <source src="videos/video1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 glass p-4 shadow-lg">
+  <div class="max-w-full flex items-center justify-between px-6">
+    <!-- Logo shifted to extreme left -->
+    <img src="images/porfolio logo.png" alt="Portfolio Logo" class="h-16 w-auto">
+
+    <!-- Navigation moved to extreme right -->
+    <nav class="flex space-x-6 text-xl">
+      <a href="#home" class="hover:text-cyan-300">Home</a>
+      <a href="#about" class="hover:text-cyan-300">About</a>
+      <a href="#projects" class="hover:text-cyan-300">Projects</a>
+      <a href="#skills" class="hover:text-cyan-300">Skills</a>
+      <a href="#experience" class="hover:text-cyan-300">Experience</a>
+      <a href="#contact" class="hover:text-cyan-300">Contact</a>
+    </nav>
+  </div>
+</header>
+  <!-- Hero -->
+ <section id="home" class="min-h-screen flex items-center justify-center px-6 relative">
+  <!-- Dark overlay for better text readability -->
+  <div class="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
+
+  <div class="glass max-w-4xl text-center p-10 rounded-xl shadow-2xl relative z-10" data-aos="zoom-in">
+    <!-- Hero Title -->
+    <h1 class="text-5xl font-bold mb-4 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-white animate-pulse">
+      Hi, I'm Atharva
+    </h1>
+
+  <!-- Subtitle with Bold RGB Gradient Effect and Text Shadow -->
+<p class="text-xl font-bold mb-6 bg-gradient-to-r from-red-500 via-green-500 to-blue-500 bg-clip-text text-transparent drop-shadow-md">
+ B.Tech CSE | AI/ML Enthusiast | 3D Designer & Frontend Dev Intern | SDE in Progress
+</p>
+
+    <!-- Enlarged Tagline with RGB Gradient Effect and Fade-in Animation -->
+<p class="text-3xl font-bold italic mb-6 bg-gradient-to-r from-red-500 via-green-500 to-blue-500 bg-clip-text text-transparent" data-aos="fade-up">
+  "Patience is key to Success"
+</p>
+    <!-- Call-to-Action Buttons -->
+    <a href="#contact" class="px-6 py-3 rounded-full bg-gray-800 hover:bg-gray-700 text-white font-semibold text-lg transition-transform transform hover:scale-105">
+   Let's Connect
+</a>
+      <a href="resume/Atharva Sarde Resume.pdf" download class="px-6 py-3 rounded-full bg-gray-800 hover:bg-gray-700 text-white font-semibold text-lg transition-transform transform hover:scale-105">
+        Download Resume
+      </a>
+    </div>
+  </div>
+</section>
+<!-- About -->
+<section id="about" class="py-20 px-4" data-aos="fade-up">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-4 text-cyan-300">About Me</h2>
+    <div class="about-box p-8 bg-gray-800 rounded-xl shadow-lg border border-cyan-300">
+      <p class="text-gray-300 text-lg">
+        Hello! I'm <strong>Atharva Sarde</strong>, a passionate Computer Science (AI & ML) student at Universal Ai University, Karjat, currently in my first year of B.Tech. I have a keen interest in both technology and creativity, which has driven me to explore the dynamic intersection of <strong>Artificial Intelligence</strong>, <strong>Machine Learning</strong>, and <strong>Graphic Design</strong>.
+      </p>
+      <p class="text-gray-300 text-lg mt-4">
+        As a <strong>Creative Lead</strong> and <strong>Organizer</strong> for the Ai Odyssey 1.0 hackathon at my university, I got the opportunity to blend creativity with tech, ensuring smooth event operations while also leading the visual design process. My prior experience as a <strong>Graphic Designer</strong> at Sparge Chem Pvt. Ltd. allowed me to hone my skills in visual storytelling, design principles, and branding.
+      </p>
+      <p class="text-gray-300 text-lg mt-4">
+        Currently, I'm working as a <strong>Frontend Web Development intern</strong> at CODTECH IT SOLUTIONS PVT. LTD., where I am enhancing my web development skills and collaborating on innovative projects. I’m always eager to contribute and grow in an environment that challenges both my creativity and technical expertise.
+      </p>
+      <p class="text-gray-300 text-lg mt-4">
+        When I’m not coding or designing, you’ll probably find me exploring new trends in tech or brainstorming ideas for my next creative project.
+      </p>
+    </div>
+  </div>
+</section>
+
+ <!-- Projects -->
+  <section id="projects" class="py-20 px-4" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-12 text-cyan-300">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="glass p-6 rounded-xl shadow-lg">
+          <h3 class="text-xl font-bold text-blue-400 mb-2">Quiz Web App</h3>
+          <p class="text-gray-300">An interactive quiz app using JavaScript with real-time feedback and question loading.</p>
+        </div>
+        <div class="glass p-6 rounded-xl shadow-lg">
+          <h3 class="text-xl font-bold text-blue-400 mb-2">Real-Time Chat App</h3>
+          <p class="text-gray-300">Built using React & WebSockets with message history and responsive UI.</p>
+        </div>
+        <div class="glass p-6 rounded-xl shadow-lg">
+          <h3 class="text-xl font-bold text-blue-400 mb-2">E-learning Platform UI</h3>
+          <p class="text-gray-300">Multi-page design for a learning platform featuring video, course list & progress tracking.</p>
+        </div>
+        <div class="glass p-6 rounded-xl shadow-lg">
+          <h3 class="text-xl font-bold text-blue-400 mb-2">Ai Odyssey Event</h3>
+          <p class="text-gray-300">Organized & designed branding for a flagship AI/ML hackathon at Universal AI University.</p>
+        </div>
+        <div class="glass p-6 rounded-xl shadow-lg">
+          <h3 class="text-xl font-bold text-blue-400 mb-2">Sparge Chem Designs & Website</h3>
+          <p class="text-gray-300">Branded content for a sustainable R&D chemical firm with strong LinkedIn presence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-20 px-4" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6 text-cyan-300">Skills & Tools</h2>
+      <div class="flex flex-wrap justify-center gap-4">
+        <span class="glass px-4 py-2 rounded-full">HTML</span>
+        <span class="glass px-4 py-2 rounded-full">CSS</span>
+        <span class="glass px-4 py-2 rounded-full">JavaScript</span>
+        <span class="glass px-4 py-2 rounded-full">React</span>
+        <span class="glass px-4 py-2 rounded-full">Python</span>
+        <span class="glass px-4 py-2 rounded-full">Node.js</span>
+        <span class="glass px-4 py-2 rounded-full">AI/ML</span>
+        <span class="glass px-4 py-2 rounded-full">3D Design (Tinkercad/Blender)</span>
+        <span class="glass px-4 py-2 rounded-full">Graphic Design</span>
+        <span class="glass px-4 py-2 rounded-full">Video Editing</span>
+        <span class="glass px-4 py-2 rounded-full">Git & GitHub</span>
+        <span class="glass px-4 py-2 rounded-full">Critical Thinking</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="py-20 px-4" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6 text-cyan-300">Experience</h2>
+      <div class="space-y-6">
+        <div class="glass p-6 rounded-xl shadow-md">
+          <h3 class="text-xl font-semibold text-blue-400">Frontend Intern – CODTECH IT SOLUTIONS</h3>
+          <p class="text-gray-400">May 2025 – Present</p>
+          <p class="text-gray-300">Working on quiz apps, real-time chat systems, and responsive UI development using React and JavaScript.</p>
+        </div>
+        <div class="glass p-6 rounded-xl shadow-md">
+          <h3 class="text-xl font-semibold text-blue-400">Graphic Designer – Sparge Chem Pvt. Ltd.</h3>
+          <p class="text-gray-400">Sep 2022 – Present</p>
+          <p class="text-gray-300">Created branding visuals and industry-focused content for a chemical R&D firm’s digital presence.</p>
+        </div>
+        <div class="glass p-6 rounded-xl shadow-md">
+          <h3 class="text-xl font-semibold text-blue-400">Event Organizer – AI Odyssey 1.0</h3>
+          <p class="text-gray-400">Mar 2025 – Present</p>
+          <p class="text-gray-300">Led the design, planning, and execution of Universal Ai University's flagship hackathon.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+<section id="contact" class="py-20 px-4" data-aos="fade-up">
+  <div class="max-w-3xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-6 text-cyan-300">Contact Me</h2>
+    <p class="text-lg text-gray-300 mb-6">Let's build cool stuff, collaborate, or just vibe with ideas!</p>
+
+    <div class="flex justify-center flex-wrap gap-4 items-center mb-6">
+  <a href="mailto:atharva.sarde0903@gmail.com" class="flex items-center gap-2 px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-full font-semibold transition">
+    <img src="images/email.png" alt="Email Icon" class="w-6 h-6" />
+    Email Me
+  </a>
+      <!-- Call Button -->
+  <a href="tel:+918668242084" class="flex items-center gap-2 px-6 py-3 bg-pink-500 hover:bg-pink-600 text-white rounded-full font-semibold shadow-md transition">
+    <img src="images/call.png" alt="Phone Icon" class="w-6 h-6" />
+    Call Me
+  </a>
+</div>
+ <!-- Headline -->
+<div class="text-center mb-6">
+  <h2 class="text-3xl font-bold text-cyan-300">"Connect with me on"</h2>
+</div>
+
+<!-- Social Links -->
+<div class="flex justify-center gap-8 flex-wrap mt-4">
+  <a href="https://www.linkedin.com/in/atharva-sarde-728222286/" target="_blank" class="flex items-center gap-2 bg-gray-800 hover:bg-blue-600 text-white px-4 py-2 rounded-full shadow-md transition-transform transform hover:scale-105">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="w-6 h-6 transition-transform transform hover:scale-110" />
+    LinkedIn
+  </a>
+  
+  <a href="mailto:atharva.sarde0903@gmail.com" class="flex items-center gap-2 bg-gray-800 hover:bg-red-600 text-white px-4 py-2 rounded-full shadow-md transition-transform transform hover:scale-105">
+    <img src="https://img.icons8.com/color/48/000000/gmail--v1.png" alt="Gmail" class="w-6 h-6 transition-transform transform hover:scale-110" />
+    Mail Me
+  </a>
+  
+  <a href="https://github.com/codebyAtharva09" target="_blank" class="flex items-center gap-2 bg-gray-800 hover:bg-gray-900 text-white px-4 py-2 rounded-full shadow-md transition-transform transform hover:scale-105">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="w-6 h-6 transition-transform transform hover:scale-110" />
+    GitHub
+  </a>
+  
+  <a href="https://leetcode.com/u/CodebyAtharva/" target="_blank" class="flex items-center gap-2 bg-gray-800 hover:bg-yellow-600 text-white px-4 py-2 rounded-full shadow-md transition-transform transform hover:scale-105">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode" class="w-6 h-6 transition-transform transform hover:scale-110" />
+    LeetCode
+  </a>
+
+  <a href="https://www.instagram.com/dreamer_king_21_/" target="_blank" class="flex items-center gap-2 bg-gray-800 hover:bg-pink-600 text-white px-4 py-2 rounded-full shadow-md transition-transform transform hover:scale-105">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" class="w-6 h-6 transition-transform transform hover:scale-110" />
+    Instagram
+  </a>
+</div>
+</section>
+  <!-- Footer -->
+<footer class="text-center py-6 bg-gray-900 text-gray-400">
+  <p>&copy; 2025 Atharva Sarde. All rights reserved.</p>
+  
+  <p>Designed with ❤️ using HTML, Tailwind CSS, and JavaScript.</p>
+
+  <!-- Scroll-to-Top Button -->
+  <button onclick="scrollToTop()" class="mt-4 px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-full text-sm transition">
+    Back to Top
+  </button>
+</footer>
+
+
+  <!-- AOS Animation Library -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script src="script.js"></script>
+</body>
+</html>
