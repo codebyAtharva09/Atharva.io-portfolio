@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Atharva Sarde | Tech Portfolio</title>
   <link rel="icon" type="image/png" href="images/AS_logo_portfolio.png" />
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -46,15 +48,14 @@
     <source src="videos/video1.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-
   <!-- Header -->
-  <header class="sticky top-0 z-50 glass p-4 shadow-lg">
+<header class="sticky top-0 z-50 glass p-4 shadow-lg">
   <div class="max-w-full flex items-center justify-between px-6">
     <!-- Logo shifted to extreme left -->
     <img src="images/porfolio logo.png" alt="Portfolio Logo" class="h-16 w-auto">
 
-    <!-- Navigation moved to extreme right -->
-    <nav class="flex space-x-6 text-xl">
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex space-x-6 text-xl">
       <a href="#home" class="hover:text-cyan-300">Home</a>
       <a href="#about" class="hover:text-cyan-300">About</a>
       <a href="#projects" class="hover:text-cyan-300">Projects</a>
@@ -62,8 +63,31 @@
       <a href="#experience" class="hover:text-cyan-300">Experience</a>
       <a href="#contact" class="hover:text-cyan-300">Contact</a>
     </nav>
+
+    <!-- Hamburger Menu Button -->
+    <div class="md:hidden">
+      <button id="menu-toggle" class="text-white focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
   </div>
+
+  <!-- Mobile Navigation -->
+<div id="mobile-menu"
+     class="md:hidden hidden px-6 pt-4 pb-4 space-y-2 text-lg text-white bg-black bg-opacity-80 rounded-b-lg
+            transition-all duration-300 ease-in-out transform scale-y-0 origin-top">
+  <a href="#home" class="block hover:text-cyan-300">Home</a>
+  <a href="#about" class="block hover:text-cyan-300">About</a>
+  <a href="#projects" class="block hover:text-cyan-300">Projects</a>
+  <a href="#skills" class="block hover:text-cyan-300">Skills</a>
+  <a href="#experience" class="block hover:text-cyan-300">Experience</a>
+  <a href="#contact" class="block hover:text-cyan-300">Contact</a>
+</div>
 </header>
+
   <!-- Hero -->
  <section id="home" class="min-h-screen flex items-center justify-center px-6 relative">
   <!-- Dark overlay for better text readability -->
@@ -242,13 +266,10 @@
   <!-- Footer -->
 <footer class="text-center py-6 bg-gray-900 text-gray-400">
   <p>&copy; 2025 Atharva Sarde. All rights reserved.</p>
-  
   <p>Designed with ❤️ using HTML, Tailwind CSS, and JavaScript.</p>
-
-  <!-- Scroll-to-Top Button -->
-  <button onclick="scrollToTop()" class="mt-4 px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-full text-sm transition">
-    Back to Top
-  </button>
+  <p>Inspired by the beauty of technology and creativity.</p>
+  <p>Follow me on my journey of learning and growth!</p>
+  <p>Made with 💻 by Atharva Sarde</p>
 </footer>
 
 
@@ -256,5 +277,35 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>AOS.init();</script>
   <script src="script.js"></script>
+  <script>
+  const toggleBtn = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  toggleBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+
+    // Animation logic
+    if (mobileMenu.classList.contains('hidden')) {
+      mobileMenu.classList.remove('scale-y-100');
+      mobileMenu.classList.add('scale-y-0');
+    } else {
+      mobileMenu.classList.remove('scale-y-0');
+      mobileMenu.classList.add('scale-y-100');
+    }
+  });
+</script>
+
+  <script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 </body>
 </html>
