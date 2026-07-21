@@ -544,32 +544,37 @@
         <!-- Project 3 -->
         <div class="group h-full" data-aos="fade-up" data-aos-delay="200">
           <div
-            class="glass rounded-3xl overflow-hidden h-full flex flex-col hover:border-pink-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-pink-500/10">
+            class="glass rounded-3xl overflow-hidden h-full flex flex-col hover:border-emerald-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-emerald-500/10">
             <div class="relative h-56 overflow-hidden">
               <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-10"></div>
-              <img src="images/codementor.png" alt="CodeMentor AI"
+              <img src="images/spargechem.svg" alt="SpargeChem"
                 class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+              <div class="absolute top-4 right-4 z-20">
+                <span
+                  class="bg-black/70 backdrop-blur border border-white/10 text-xs font-bold px-3 py-1 rounded-full text-white">Deployed</span>
+              </div>
             </div>
 
             <div class="p-6 flex flex-col flex-grow">
-              <h3 class="text-xl font-bold mb-3 group-hover:text-pink-400 transition-colors">CodeMentor AI</h3>
+              <h3 class="text-xl font-bold mb-3 group-hover:text-emerald-400 transition-colors">SpargeChem</h3>
               <p class="text-gray-400 text-sm mb-6 leading-relaxed line-clamp-3">
-                AI-powered coding assistant providing real-time code suggestions and mentorship. Secure JWT auth and
-                99.5% uptime.
+                Production CRO/CDMO platform for a custom-synthesis chemical manufacturer, with an RDKit/3Dmol-powered
+                molecule search and catalog, admin automation, and a PostgreSQL backend on a self-hosted VPS.
               </p>
 
               <div class="flex flex-wrap gap-2 mb-6">
-                <span class="px-2 py-1 bg-green-500/10 text-green-400 text-xs rounded border border-green-500/20">OpenAI
-                  API</span>
-                <span class="px-2 py-1 bg-red-500/10 text-red-400 text-xs rounded border border-red-500/20">JWT</span>
                 <span
-                  class="px-2 py-1 bg-blue-500/10 text-blue-400 text-xs rounded border border-blue-500/20">React</span>
+                  class="px-2 py-1 bg-emerald-500/10 text-emerald-400 text-xs rounded border border-emerald-500/20">Next.js</span>
+                <span
+                  class="px-2 py-1 bg-sky-500/10 text-sky-400 text-xs rounded border border-sky-500/20">RDKit</span>
+                <span
+                  class="px-2 py-1 bg-blue-500/10 text-blue-400 text-xs rounded border border-blue-500/20">PostgreSQL</span>
               </div>
 
               <div class="mt-auto flex gap-3">
-                <a href="#"
+                <a href="https://www.spargechem.com" target="_blank"
                   class="flex-1 flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg py-2 text-sm font-medium transition-colors">
-                  <i data-lucide="github" class="w-4 h-4"></i> Code
+                  <i data-lucide="external-link" class="w-4 h-4"></i> Live Site
                 </a>
               </div>
             </div>
@@ -707,10 +712,27 @@
             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">PyTorch</span>
             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">TensorFlow</span>
             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">OpenCV</span>
+            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">CNNs</span>
+            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Transfer Learning</span>
+            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Grad-CAM</span>
             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Generative AI</span>
+          </div>
+        </div>
+
+        <!-- Skill Card -->
+        <div class="glass p-6 rounded-2xl border border-white/5 hover:border-emerald-500/50 transition-colors group"
+          data-aos="fade-up" data-aos-delay="150">
+          <div class="p-3 bg-emerald-500/10 rounded-xl w-fit mb-4 group-hover:bg-emerald-500/20 transition-colors">
+            <i data-lucide="cpu" class="w-6 h-6 text-emerald-400"></i>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Edge AI</h3>
+          <div class="flex flex-wrap gap-2">
             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Ultralytics YOLO</span>
             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">INT8 Quantization</span>
-            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">ONNX / MLIR</span>
+            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">ONNX</span>
+            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">MLIR</span>
+            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Model Calibration</span>
+            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">CVITEK NPU / MaixCAM</span>
           </div>
         </div>
 
@@ -725,6 +747,7 @@
             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">React</span>
             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Node.js</span>
             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">FastAPI</span>
+            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">REST APIs</span>
             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">PostgreSQL</span>
             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Supabase</span>
             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">MQTT</span>
@@ -742,6 +765,7 @@
             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Docker</span>
             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">AWS</span>
             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Git</span>
+            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Linux</span>
             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Figma</span>
           </div>
         </div>

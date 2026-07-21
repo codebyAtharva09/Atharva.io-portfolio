@@ -1,0 +1,174 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-1.0in}
+\addtolength{\textheight}{2.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, itemsep=1pt, topsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Atharva Sarde} \\ \vspace{1pt}
+    \small +91-8668242084 $|$ \href{mailto:atharva.sarde0903@gmail.com}{atharva.sarde0903@gmail.com} $|$
+    \href{https://www.linkedin.com/in/atharvasarde-728222286}{linkedin.com/in/atharvasarde-728222286} $|$
+    \href{https://github.com/codebyAtharva09}{github.com/codebyAtharva09} $|$
+    \href{https://codebyatharva09.github.io/Atharva.io-portfolio/}{codebyatharva09.github.io/Atharva.io-portfolio}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Universal AI University}{Mumbai, Maharashtra, India}
+      {Bachelor of Technology in Computer Science Engineering (AI \& ML)}{Aug. 2024 -- Nov. 2028}
+    \resumeSubheading
+      {Alard Public School}{Pune, Maharashtra, India}
+      {Higher Secondary Certificate (HSC) -- First Division with Distinction}{2022 -- 2024}
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}: Python, JavaScript, C/C++, SQL (Advanced queries, optimization, debugging) \\
+     \textbf{AI/Machine Learning}: Deep Learning (CNNs, Transfer Learning), Model Evaluation \& Metrics (Accuracy, Precision, Recall, F1, AUC), Uncertainty Quantification, Reliability-Aware AI, Explainable AI (Grad-CAM), Production ML Systems \\
+     \textbf{Edge AI \& Embedded Vision}: PyTorch $\rightarrow$ ONNX $\rightarrow$ MLIR $\rightarrow$ INT8 Quantization, Model Calibration, Ultralytics YOLO, CVITEK NPU / MaixCAM Deployment, MQTT \\
+     \textbf{Medical AI \& Safety}: Histopathology Image Analysis (BreaKHis), AI Safety \& Hallucination Detection, Human-in-the-Loop Systems, Safety-Critical AI Design, Healthcare Compliance (NDHM/ABHA) \\
+     \textbf{Frameworks \& Libraries}: PyTorch, TensorFlow, Scikit-learn, NumPy, Pandas, Matplotlib \\
+     \textbf{Web \& Backend}: React.js, Node.js, Express.js, REST APIs, FastAPI \\
+     \textbf{Databases \& Cloud}: PostgreSQL, Supabase, Firebase, AWS (EC2), GCP (Cloud Functions, BigQuery basics) \\
+     \textbf{DevOps \& Testing}: Git/GitHub, Docker, CI/CD Pipelines, Unit Testing, Integration Testing, Code Review \\
+     \textbf{Tools \& Platforms}: VS Code, GitHub Actions, Jupyter Notebook, Postman, Figma, Netlify, Render
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Artificial Intelligence Intern}{Apr. 2026 -- Jul. 2026}
+      {RAMS Digital}{Pune, Maharashtra, India}
+      \resumeItemListStart
+        \resumeItem{Built end-to-end YOLO pipeline for real-time rack/warehouse defect detection, quantizing PyTorch $\rightarrow$ ONNX $\rightarrow$ MLIR $\rightarrow$ INT8 and deploying on CVITEK NPU / MaixCAM edge hardware for real-time on-device inference}
+        \resumeItem{Built real-time PPE compliance detection and a smart MHE safety camera with a face-authentication brake interlock; unified public datasets into multi-source human \& PPE pipelines with MQTT-based zone alerting}
+        \resumeItem{Contributed to SALT, an AI-powered CAD system generating consultant-grade DXF/SVG drawing packages for water infrastructure -- built the synthesis engine, export pipeline, and a precedent library from 38 real WTP drawings}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Graphic Designer (Part-Time)}{Sept. 2022 -- Apr. 2026}
+      {Sparge Chem Private Limited}{Maharashtra, India}
+      \resumeItemListStart
+        \resumeItem{Created 50+ digital marketing creatives including brochures and social media assets, boosting client engagement by 40\%}
+        \resumeItem{Contributed to supplier network system integrating HR, Accounting, and Project Cost Management with B2B workflows}
+        \resumeItem{Leveraged design analytics to improve campaign performance by 30\% and align visuals with business objectives}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Creative Lead \& Event Organizer}{Mar. 2025 -- Oct. 2025}
+      {AI Odyssey 1.0, Universal AI University}{Karjat, Maharashtra, India}
+      \resumeItemListStart
+        \resumeItem{Spearheaded branding and coordination for AI \& ML hackathon with 200+ participants across 50+ teams}
+        \resumeItem{Produced promotional materials improving visibility by 60\%, received Certificate of Appreciation for leadership}
+        \resumeItem{Orchestrated logistics and vendor coordination, delivering successful event exceeding stakeholder expectations}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{MediScopic-BC (Medical AI)} $|$ \emph{Python, PyTorch, ResNet50, Grad-CAM, OpenCV}}{Research Project}
+          \resumeItemListStart
+            \resumeItem{Engineered dual-stage deep learning framework for breast cancer histopathology classification using a ResNet50 diagnostician and MLP auditor}
+            \resumeItem{Pioneered introspection mechanism utilizing Entropy \& Embedding Distance to detect silent failures, flagging \textasciitilde75\% of uncertain predictions for human review, with Grad-CAM heatmaps for pathologist verification}
+            \resumeItem{Achieved 84.84\% classification accuracy on the BreaKHis dataset through transfer learning and data augmentation}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{HospAgent (Agentic AI)} $|$ \emph{React, Node.js, Express, Supabase, Python, Recharts}}{Mumbai Hacks 2025}
+          \resumeItemListStart
+            \resumeItem{Built comprehensive digital health record system for migrant workers aligned with UN SDGs, featuring multi-role portals with Row-Level Security}
+            \resumeItem{Incorporated AI-driven patient surge prediction model using Python, improving hospital capacity planning accuracy by 35\%, and ensured NDHM/ABHA compliance for health data privacy and interoperability}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{SpargeChem} $|$ \emph{Next.js, TypeScript, PostgreSQL, RDKit, 3Dmol.js}}{Deployed -- spargechem.com}
+          \resumeItemListStart
+            \resumeItem{Built and deployed the production CRO/CDMO platform for a custom-synthesis chemical manufacturer, with an RDKit/3Dmol molecule search and catalog, PostgreSQL backend, and self-hosted VPS deployment (nginx, PM2)}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS & ACHIEVEMENTS-----------
+\section{Certifications \& Achievements}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{AWS Cloud Certifications} -- Amazon Web Services cloud computing and infrastructure certification \\
+     \textbf{Introduction to Node.js (LFW111)} -- Linux Foundation certification for Node.js fundamentals \\
+     \textbf{Deloitte Data Analytics Job Simulation} -- Virtual experience program on Forage platform \\
+     \textbf{Bring AI to Work Workshop} -- Google Workspace AI integration and productivity workshop \\
+     \textbf{Smart Project} -- Universal AI University \\
+     \textbf{AI Odyssey 1.0 Creative Lead} -- Led university flagship hackathon, received Certificate of Appreciation \\
+     \textbf{Mumbai Hacks 2025 Participant} -- Competed in national-level AI/ML hackathon with HospAgent project
+    }}
+ \end{itemize}
+
+\end{document}
